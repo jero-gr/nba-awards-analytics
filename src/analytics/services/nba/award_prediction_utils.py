@@ -89,11 +89,13 @@ def apply_projected_65_game_filter(df_player_season, df_team_season, current_sea
 
 
 def add_player_names(df):
-    from sync.models import Player
-
-    player_names = dict(Player.objects.values_list('id', 'name'))
+    # Standalone adaptation: the original integration queried sync.models.Player;
+    # player_name is now display-only metadata supplied by the local player CSV.
+    if 'player_name' not in df.columns:
+        raise ValueError(
+            "Falta player_name: el CSV local de jugadores debe incluir este metadato."
+        )
     out = df.copy()
-    out['player_name'] = out['player_id'].map(player_names)
     return out
 
 def calculate_expected_votes(scores, temperature=0.5):

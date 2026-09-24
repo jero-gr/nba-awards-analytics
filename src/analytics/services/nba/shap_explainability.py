@@ -5,7 +5,10 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-from analytics.services.nba.shap_group_config import get_shap_feature_groups
+
+# Standalone adaptation: the original project used an absolute analytics import;
+# this snapshot uses a package-relative import and has no external project dependency.
+from .shap_group_config import get_shap_feature_groups
 
 try:
     import shap  # type: ignore

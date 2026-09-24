@@ -1,12 +1,11 @@
 import json
 import logging
-import os
 import time
 from datetime import datetime
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from django.conf import settings
 from sklearn.metrics import ndcg_score
 
 from .features import NBAFeatureEngineer
@@ -23,11 +22,10 @@ class NBAMVPTrainer:
         self.current_season = current_season
         self.last_cv_summary = None
         
-        # Directorio para guardar reportes de entrenamiento
-        self.reports_dir = os.path.join(
-            settings.BASE_DIR, 'analytics', 'services', 'nba', 'mvp_predictor', 'reports'
-        )
-        os.makedirs(self.reports_dir, exist_ok=True)
+        # Standalone adaptation: the original integration derived this directory from
+        # Django settings.BASE_DIR; reports are now relative to this module.
+        self.reports_dir = Path(__file__).resolve().parent / 'reports'
+        self.reports_dir.mkdir(parents=True, exist_ok=True)
         self._validate_training_window()
 
     def _validate_training_window(self):
@@ -76,8 +74,10 @@ class NBAMVPTrainer:
         Separa X, y y qid del DataFrame de entrenamiento.
         """
         # Identificar columnas que NO son features
+        # Standalone adaptation: player_name replaces the original model lookup and
+        # remains display-only metadata, explicitly outside the 64-feature matrix.
         exclude_cols = [
-            'player_id', 'player_ext_id', 'team_id', 'season_year', 
+            'player_id', 'player_ext_id', 'player_name', 'team_id', 'season_year',
             'won_mvp', 'mvp_share', 'mvp_share_weighted', 'all_nba_share'
         ]
         
@@ -105,12 +105,12 @@ class NBAMVPTrainer:
         t0 = time.perf_counter()
         df = self._build_training_df()
 
-        # Para mapear IDs a nombres en el reporte
-        from sync.models import Player
-        player_names = dict(
-            Player.objects.filter(id__in=df['player_id'].unique()).values_list('id', 'name')
-        )
-        df['player_name'] = df['player_id'].map(player_names)
+        # Standalone adaptation: the original integration queried sync.models.Player;
+        # player_name now arrives as display-only metadata in the local player CSV.
+        if 'player_name' not in df.columns:
+            raise ValueError(
+                "Falta player_name: el CSV local de jugadores debe incluir este metadato."
+            )
 
         seasons = sorted(df['season_year'].unique())
         if len(seasons) < 2:
@@ -185,7 +185,7 @@ class NBAMVPTrainer:
         
         # 1. Guardar CSV detallado
         results_df = pd.DataFrame(results)
-        csv_path = os.path.join(self.reports_dir, f'loso_results_{timestamp}.csv')
+        csv_path = self.reports_dir / f'loso_results_{timestamp}.csv'
         results_df.to_csv(csv_path, index=False)
         
         # 2. Guardar JSON de resumen con hiperparámetros
@@ -212,14 +212,14 @@ class NBAMVPTrainer:
             "hyperparameters": dummy_model.params
         }
         
-        json_path = os.path.join(self.reports_dir, f'summary_{timestamp}.json')
+        json_path = self.reports_dir / f'summary_{timestamp}.json'
         with open(json_path, 'w') as f:
             json.dump(summary, f, indent=4)
 
         self.last_cv_summary = summary
         self.last_cv_summary["paths"] = {
-            "csv": csv_path,
-            "json": json_path,
+            "csv": str(csv_path),
+            "json": str(json_path),
         }
 
         logger.info("RESULTADOS FINALES DE VALIDACION")
@@ -227,8 +227,8 @@ class NBAMVPTrainer:
         logger.info("Promedio Top-1 Accuracy: %.2f%%", avg_top1 * 100)
         logger.info("Rango Promedio del MVP Real: %.1f", avg_rank)
         logger.info("Reportes guardados en: %s", self.reports_dir)
-        logger.info(" - CSV: %s", os.path.basename(csv_path))
-        logger.info(" - JSON: %s", os.path.basename(json_path))
+        logger.info(" - CSV: %s", csv_path.name)
+        logger.info(" - JSON: %s", json_path.name)
         logger.info("LOSO finalizado en %.2fs", time.perf_counter() - t0)
         
         return results
@@ -269,7 +269,7 @@ class NBAMVPTrainer:
         # --- Guardar importancia global en JSON ---
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         importance_dict = {name: float(score) for name, score in sorted_importance}
-        json_path = os.path.join(self.reports_dir, f'final_model_features_{timestamp}.json')
+        json_path = self.reports_dir / f'final_model_features_{timestamp}.json'
         with open(json_path, 'w') as f:
             json.dump({"timestamp": timestamp, "global_feature_importance_gain": importance_dict}, f, indent=4)
         
@@ -278,14 +278,14 @@ class NBAMVPTrainer:
             logger.info("%s: %.4f", name, score)
 
         logger.info("Modelo final entrenado con %s filas.", len(df))
-        logger.info("Importancia de variables guardada en: %s", os.path.basename(json_path))
+        logger.info("Importancia de variables guardada en: %s", json_path.name)
         logger.info("Entrenamiento final completado en %.2fs", time.perf_counter() - t0)
 
         return {
             "rows": int(len(df)),
             "saved_model": bool(save_model),
             "model_artifact": model_artifact,
-            "feature_importance_path": json_path,
+            "feature_importance_path": str(json_path),
             "training_window": {
                 "season_start": self.season_start,
                 "season_end": self.season_end,

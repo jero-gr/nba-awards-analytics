@@ -1,6 +1,7 @@
-from analytics.services.nba.shap_explainability import generate_shap_explanations
-
-from analytics.services.nba.award_prediction_utils import (
+# Standalone adaptation: the original project used absolute analytics imports;
+# this snapshot uses package-relative imports and has no external project dependency.
+from ..shap_explainability import generate_shap_explanations
+from ..award_prediction_utils import (
     apply_projected_65_game_filter,
     add_player_names,
     calculate_expected_votes,
@@ -19,7 +20,7 @@ def predict_award_season(season_year=2026, top_k=15, model_version=None):
         loaded_model_path = ranker.load(version=model_version)
     except FileNotFoundError as exc:
         raise ValueError(
-            "No hay modelo MVP guardado. Entrena primero con analytics-train-awards --award mvp."
+            "No hay un modelo MVP guardado en el directorio trained_models."
         ) from exc
 
     df_player_season, df_team_season, df_award_stats = engineer.get_raw_datasets()

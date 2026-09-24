@@ -10,7 +10,7 @@ class NBAFeatureEngineer:
         self.loader = NBADataLoader()
 
     def get_raw_datasets(self):
-        """Retorna los tres DataFrames tal como están en la DB."""
+        """Retorna los tres DataFrames locales sin transformar."""
         df_player_season = self.loader.get_player_season_stats()
         df_team_season = self.loader.get_team_season_stats()
         df_award_stats = self.loader.get_award_stats()
@@ -30,7 +30,9 @@ class NBAFeatureEngineer:
         df['season_year'] = df['season'].str[:4].astype(int) + 1
 
         self.columns_to_use = [
-            'player_id', 'player_ext_id', 'team_id', 'season_year', 'gp', 'fg_pct', 'fg3_pct', 'fg2_pct', 'efg_pct', 'ft_pct', 'trp_dbl',
+            # Standalone adaptation: the original integration resolved names through
+            # sync.models.Player; the local dataset carries player_name as display metadata.
+            'player_id', 'player_ext_id', 'player_name', 'team_id', 'season_year', 'gp', 'fg_pct', 'fg3_pct', 'fg2_pct', 'efg_pct', 'ft_pct', 'trp_dbl',
             #'fgm_per_poss', 'fga_per_poss', 'fg3m_per_poss', 'fg3a_per_poss', 'fg2m_per_poss', 'fg2a_per_poss', 'ftm_per_poss', 'fta_per_poss',
             #'oreb_per_poss', 'dreb_per_poss', 'reb_per_poss', 'ast_per_poss', 'stl_per_poss', 'blk_per_poss', 'tov_per_poss', 'pf_per_poss', 'pts_per_poss',
             'ortg', 'drtg', 'per', 'ts_pct', 'fg3_attempt_rate', 'ft_attempt_rate', 'oreb_pct', 'dreb_pct', 'reb_pct', 'ast_pct', 'stl_pct', 'blk_pct', 'tov_pct',
