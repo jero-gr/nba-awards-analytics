@@ -1,0 +1,1232 @@
+[
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "score": 2.1574108600616455,
+    "rank": 1,
+    "top_positive": [
+      {
+        "feature": "vorp_zscore",
+        "value": 0.40618860721588135
+      },
+      {
+        "feature": "per_zscore",
+        "value": 0.3756686747074127
+      },
+      {
+        "feature": "wins_zscore",
+        "value": 0.28710898756980896
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": 0.23465056717395782
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": 0.20931777358055115
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "oreb_pct_zscore",
+        "value": -0.0936497300863266
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": -0.07323047518730164
+      },
+      {
+        "feature": "oreb_per_game_zscore",
+        "value": -0.047572098672389984
+      }
+    ]
+  },
+  {
+    "player": "Nikola Jokić",
+    "score": 1.1296360492706299,
+    "rank": 2,
+    "top_positive": [
+      {
+        "feature": "vorp_zscore",
+        "value": 0.4428325891494751
+      },
+      {
+        "feature": "per_zscore",
+        "value": 0.34179675579071045
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": 0.2286137044429779
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": 0.11911949515342712
+      },
+      {
+        "feature": "obpm_zscore",
+        "value": 0.09663079679012299
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "dws_zscore",
+        "value": -0.11547049880027771
+      },
+      {
+        "feature": "wins_zscore",
+        "value": -0.08440268784761429
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": -0.0662967786192894
+      }
+    ]
+  },
+  {
+    "player": "Luka Dončić",
+    "score": 0.44020554423332214,
+    "rank": 3,
+    "top_positive": [
+      {
+        "feature": "pts_per_game_zscore",
+        "value": 0.2652703523635864
+      },
+      {
+        "feature": "per_zscore",
+        "value": 0.208148792386055
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": 0.13417775928974152
+      },
+      {
+        "feature": "fgm_per_game_zscore",
+        "value": 0.11549445986747742
+      },
+      {
+        "feature": "obpm_zscore",
+        "value": 0.07400423288345337
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "on_court_pm_per_100_zscore",
+        "value": -0.21412795782089233
+      },
+      {
+        "feature": "dws_zscore",
+        "value": -0.060285795480012894
+      },
+      {
+        "feature": "oreb_pct_zscore",
+        "value": -0.05508578196167946
+      }
+    ]
+  },
+  {
+    "player": "Victor Wembanyama",
+    "score": 0.3316813111305237,
+    "rank": 4,
+    "top_positive": [
+      {
+        "feature": "per_zscore",
+        "value": 0.3076055943965912
+      },
+      {
+        "feature": "wins_zscore",
+        "value": 0.20741334557533264
+      },
+      {
+        "feature": "dws_zscore",
+        "value": 0.14576715230941772
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": 0.09756748378276825
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": 0.06123612821102142
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.21055451035499573
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": -0.1138899177312851
+      },
+      {
+        "feature": "fgm_per_game_zscore",
+        "value": -0.08332785218954086
+      }
+    ]
+  },
+  {
+    "player": "Cade Cunningham",
+    "score": -0.462166428565979,
+    "rank": 5,
+    "top_positive": [
+      {
+        "feature": "inv_conference_rank",
+        "value": 0.2846323549747467
+      },
+      {
+        "feature": "wins_zscore",
+        "value": 0.20121920108795166
+      },
+      {
+        "feature": "pts_gen_by_ast_per_game_zscore",
+        "value": 0.08765853941440582
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.07799031585454941
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.03884228691458702
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "per_zscore",
+        "value": -0.3514206111431122
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.24094673991203308
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": -0.12216068059206009
+      }
+    ]
+  },
+  {
+    "player": "Tyrese Maxey",
+    "score": -1.2410953044891357,
+    "rank": 6,
+    "top_positive": [
+      {
+        "feature": "fgm_per_game_zscore",
+        "value": 0.15729127824306488
+      },
+      {
+        "feature": "fga_per_game_zscore",
+        "value": 0.1077001690864563
+      },
+      {
+        "feature": "min_total_per_game_zscore",
+        "value": 0.05729924514889717
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": 0.025195874273777008
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": 0.024450302124023438
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "on_court_pm_per_100_zscore",
+        "value": -0.22514715790748596
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.19620908796787262
+      },
+      {
+        "feature": "wins_zscore",
+        "value": -0.19257642328739166
+      }
+    ]
+  },
+  {
+    "player": "Kawhi Leonard",
+    "score": -1.4364821910858154,
+    "rank": 7,
+    "top_positive": [
+      {
+        "feature": "per_zscore",
+        "value": 0.2761715352535248
+      },
+      {
+        "feature": "pf_shooting_per_game_zscore",
+        "value": 0.05088003724813461
+      },
+      {
+        "feature": "pf_per_game_zscore",
+        "value": 0.02917039394378662
+      },
+      {
+        "feature": "obpm_zscore",
+        "value": 0.02750929817557335
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.017141152173280716
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "wins_zscore",
+        "value": -0.635494589805603
+      },
+      {
+        "feature": "inv_conference_rank",
+        "value": -0.21686437726020813
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.17916865646839142
+      }
+    ]
+  },
+  {
+    "player": "Anthony Edwards",
+    "score": -1.6173912286758423,
+    "rank": 8,
+    "top_positive": [
+      {
+        "feature": "fgm_per_game_zscore",
+        "value": 0.11330980807542801
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": 0.0999625101685524
+      },
+      {
+        "feature": "fga_per_game_zscore",
+        "value": 0.07638048380613327
+      },
+      {
+        "feature": "pf_shooting_per_game_zscore",
+        "value": 0.05747829005122185
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.041092921048402786
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.42790862917900085
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": -0.3461644947528839
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.23047327995300293
+      }
+    ]
+  },
+  {
+    "player": "Jalen Duren",
+    "score": -1.6381059885025024,
+    "rank": 9,
+    "top_positive": [
+      {
+        "feature": "inv_conference_rank",
+        "value": 0.17123660445213318
+      },
+      {
+        "feature": "wins_zscore",
+        "value": 0.15665701031684875
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.040067993104457855
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": 0.024064676836133003
+      },
+      {
+        "feature": "reb_per_game_zscore",
+        "value": 0.020648552104830742
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6307265758514404
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.22722333669662476
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": -0.22244004905223846
+      }
+    ]
+  },
+  {
+    "player": "Jaylen Brown",
+    "score": -1.6659421920776367,
+    "rank": 10,
+    "top_positive": [
+      {
+        "feature": "fgm_per_game_zscore",
+        "value": 0.1461557149887085
+      },
+      {
+        "feature": "fg2a_per_game_zscore",
+        "value": 0.08529407531023026
+      },
+      {
+        "feature": "fga_per_game_zscore",
+        "value": 0.08220400661230087
+      },
+      {
+        "feature": "usg_pct_zscore",
+        "value": 0.05967427417635918
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.03577461466193199
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.566234290599823
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.4731132388114929
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.24638047814369202
+      }
+    ]
+  },
+  {
+    "player": "Donovan Mitchell",
+    "score": -1.7871780395507812,
+    "rank": 11,
+    "top_positive": [
+      {
+        "feature": "fga_per_game_zscore",
+        "value": 0.08598680049180984
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.025376353412866592
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.018367789685726166
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.018272561952471733
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.014103302732110023
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.3511252999305725
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.22767791152000427
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.21475914120674133
+      }
+    ]
+  },
+  {
+    "player": "Chet Holmgren",
+    "score": -2.1172873973846436,
+    "rank": 12,
+    "top_positive": [
+      {
+        "feature": "wins_zscore",
+        "value": 0.2200322449207306
+      },
+      {
+        "feature": "inv_conference_rank",
+        "value": 0.1862456053495407
+      },
+      {
+        "feature": "dws_zscore",
+        "value": 0.07356572896242142
+      },
+      {
+        "feature": "on_court_pm_per_100_zscore",
+        "value": 0.045483801513910294
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.0412544347345829
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6509848833084106
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.4029395282268524
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.2240772396326065
+      }
+    ]
+  },
+  {
+    "player": "Jalen Brunson",
+    "score": -2.15460467338562,
+    "rank": 13,
+    "top_positive": [
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.024074509739875793
+      },
+      {
+        "feature": "blk_per_game_zscore",
+        "value": 0.019892800599336624
+      },
+      {
+        "feature": "nrtg_zscore",
+        "value": 0.018744442611932755
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.018352724611759186
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.01820814609527588
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5507307052612305
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3632361888885498
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.18713530898094177
+      }
+    ]
+  },
+  {
+    "player": "Jamal Murray",
+    "score": -2.2880570888519287,
+    "rank": 14,
+    "top_positive": [
+      {
+        "feature": "ortg_zscore_y",
+        "value": 0.013889633119106293
+      },
+      {
+        "feature": "pf_per_game_zscore",
+        "value": 0.012887050397694111
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.01005806028842926
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.008601327426731586
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.006652420852333307
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.35598447918891907
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3250412940979004
+      },
+      {
+        "feature": "pts_per_game_zscore",
+        "value": -0.20069007575511932
+      }
+    ]
+  },
+  {
+    "player": "Kevin Durant",
+    "score": -2.2903268337249756,
+    "rank": 15,
+    "top_positive": [
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.039115168154239655
+      },
+      {
+        "feature": "min_total_per_game_zscore",
+        "value": 0.03652945160865784
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": 0.027606409043073654
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.015565947629511356
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.008380849845707417
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "per_zscore",
+        "value": -0.42975735664367676
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": -0.3786328136920929
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.20610307157039642
+      }
+    ]
+  },
+  {
+    "player": "Derrick White",
+    "score": -2.4306089878082275,
+    "rank": 16,
+    "top_positive": [
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.09486989676952362
+      },
+      {
+        "feature": "pf_offball_per_game_zscore",
+        "value": 0.09355244785547256
+      },
+      {
+        "feature": "pf_per_game_zscore",
+        "value": 0.033518947660923004
+      },
+      {
+        "feature": "efg_pct_zscore",
+        "value": 0.03267578035593033
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.024446260184049606
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5817728638648987
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5045116543769836
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3549281358718872
+      }
+    ]
+  },
+  {
+    "player": "Mikal Bridges",
+    "score": -2.434281349182129,
+    "rank": 17,
+    "top_positive": [
+      {
+        "feature": "pf_offball_per_game_zscore",
+        "value": 0.08745869249105453
+      },
+      {
+        "feature": "blocked_attempts_per_game_zscore",
+        "value": 0.05946771055459976
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.02942151576280594
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.01736168935894966
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.012554317712783813
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5687587261199951
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.34933456778526306
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.23388291895389557
+      }
+    ]
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "score": -2.4383938312530518,
+    "rank": 18,
+    "top_positive": [
+      {
+        "feature": "reb_per_game_zscore",
+        "value": 0.021769989281892776
+      },
+      {
+        "feature": "dreb_per_game_zscore",
+        "value": 0.02149997465312481
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.021124400198459625
+      },
+      {
+        "feature": "nrtg_zscore",
+        "value": 0.01854381337761879
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.015698622912168503
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6854945421218872
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3760416507720947
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.2161063402891159
+      }
+    ]
+  },
+  {
+    "player": "Amen Thompson",
+    "score": -2.703136682510376,
+    "rank": 19,
+    "top_positive": [
+      {
+        "feature": "min_total_per_game_zscore",
+        "value": 0.07665297389030457
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.016095086932182312
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.01263035461306572
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.009004787541925907
+      },
+      {
+        "feature": "oreb_per_game_zscore",
+        "value": 0.0029706042259931564
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.7028415203094482
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.40618327260017395
+      },
+      {
+        "feature": "bpm_zscore",
+        "value": -0.20204214751720428
+      }
+    ]
+  },
+  {
+    "player": "Jalen Johnson",
+    "score": -2.762598991394043,
+    "rank": 20,
+    "top_positive": [
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.036724064499139786
+      },
+      {
+        "feature": "trp_dbl_zscore",
+        "value": 0.03490370884537697
+      },
+      {
+        "feature": "reb_per_game_zscore",
+        "value": 0.021643206477165222
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.01476423628628254
+      },
+      {
+        "feature": "dreb_per_game_zscore",
+        "value": 0.011340990662574768
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5764855146408081
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.4043966233730316
+      },
+      {
+        "feature": "vorp_zscore",
+        "value": -0.37763893604278564
+      }
+    ]
+  },
+  {
+    "player": "LaMelo Ball",
+    "score": -2.7857797145843506,
+    "rank": 21,
+    "top_positive": [
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.06813403964042664
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.027414511889219284
+      },
+      {
+        "feature": "efg_pct_zscore",
+        "value": 0.020906144753098488
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.017054647207260132
+      },
+      {
+        "feature": "ast_pct_zscore",
+        "value": 0.013323478400707245
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6008022427558899
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5034471750259399
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3356834948062897
+      }
+    ]
+  },
+  {
+    "player": "Kon Knueppel",
+    "score": -2.969477415084839,
+    "rank": 22,
+    "top_positive": [
+      {
+        "feature": "fg3_pct_zscore",
+        "value": 0.05151193588972092
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.019265448674559593
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.013950633816421032
+      },
+      {
+        "feature": "stl_pct_zscore",
+        "value": 0.011323777958750725
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.008602672256529331
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5584558844566345
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.34978222846984863
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.24972884356975555
+      }
+    ]
+  },
+  {
+    "player": "James Harden",
+    "score": -2.97226881980896,
+    "rank": 23,
+    "top_positive": [
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.033662810921669006
+      },
+      {
+        "feature": "ast_per_game_zscore",
+        "value": 0.01587759144604206
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.014319747686386108
+      },
+      {
+        "feature": "pf_shooting_per_game_zscore",
+        "value": 0.007050127722322941
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.006979199592024088
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6264500617980957
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5363757014274597
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.33507153391838074
+      }
+    ]
+  },
+  {
+    "player": "Collin Gillespie",
+    "score": -2.9992659091949463,
+    "rank": 24,
+    "top_positive": [
+      {
+        "feature": "pf_offball_per_game_zscore",
+        "value": 0.07358940690755844
+      },
+      {
+        "feature": "pf_shooting_per_game_zscore",
+        "value": 0.03330930322408676
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.029519973322749138
+      },
+      {
+        "feature": "blk_per_game_zscore",
+        "value": 0.017980514094233513
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.014242005534470081
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5782942175865173
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.45389261841773987
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.34536802768707275
+      }
+    ]
+  },
+  {
+    "player": "Deni Avdija",
+    "score": -3.0505592823028564,
+    "rank": 25,
+    "top_positive": [
+      {
+        "feature": "fta_per_game_zscore",
+        "value": 0.07764290273189545
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.03339938074350357
+      },
+      {
+        "feature": "and1_per_game_zscore",
+        "value": 0.025028537958860397
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.015584604814648628
+      },
+      {
+        "feature": "efg_pct_zscore",
+        "value": 0.011973627842962742
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.47403424978256226
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.4504074454307556
+      },
+      {
+        "feature": "wins_zscore",
+        "value": -0.44653406739234924
+      }
+    ]
+  },
+  {
+    "player": "Alperen Şengün",
+    "score": -3.066401243209839,
+    "rank": 26,
+    "top_positive": [
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.035417359322309494
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.025430599227547646
+      },
+      {
+        "feature": "fg2m_per_game_zscore",
+        "value": 0.019631046801805496
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.01741730235517025
+      },
+      {
+        "feature": "trp_dbl_zscore",
+        "value": 0.012859358452260494
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6722778677940369
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5303804874420166
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.3573707640171051
+      }
+    ]
+  },
+  {
+    "player": "Scottie Barnes",
+    "score": -3.1395604610443115,
+    "rank": 27,
+    "top_positive": [
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.01947955973446369
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.014260321855545044
+      },
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.011328509077429771
+      },
+      {
+        "feature": "tov_per_game_zscore",
+        "value": 0.008093987591564655
+      },
+      {
+        "feature": "drtg_zscore_y",
+        "value": 0.005100448615849018
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6575339436531067
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5287989377975464
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.4037383496761322
+      }
+    ]
+  },
+  {
+    "player": "Evan Mobley",
+    "score": -3.2369883060455322,
+    "rank": 28,
+    "top_positive": [
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.02135302498936653
+      },
+      {
+        "feature": "ts_pct_zscore",
+        "value": 0.0037388051860034466
+      },
+      {
+        "feature": "ortg_zscore_y",
+        "value": 0.0024824594147503376
+      },
+      {
+        "feature": "srs_zscore",
+        "value": 0.002063028048723936
+      },
+      {
+        "feature": "stl_pct_zscore",
+        "value": 0.00017914772615768015
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.6639958620071411
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.5032280087471008
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.4013727009296417
+      }
+    ]
+  },
+  {
+    "player": "Trey Murphy III",
+    "score": -3.258603811264038,
+    "rank": 29,
+    "top_positive": [
+      {
+        "feature": "ft_attempt_rate_zscore",
+        "value": 0.02016565017402172
+      },
+      {
+        "feature": "fg3m_per_game_zscore",
+        "value": 0.014183809980750084
+      },
+      {
+        "feature": "ortg_zscore_x",
+        "value": 0.010053892619907856
+      },
+      {
+        "feature": "blk_pct_zscore",
+        "value": 0.006226933561265469
+      },
+      {
+        "feature": "min_total_per_game_zscore",
+        "value": 0.005711328703910112
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.5061249732971191
+      },
+      {
+        "feature": "win_shares_zscore",
+        "value": -0.4357137978076935
+      },
+      {
+        "feature": "wins_zscore",
+        "value": -0.4002285301685333
+      }
+    ]
+  },
+  {
+    "player": "Donovan Clingan",
+    "score": -3.268775224685669,
+    "rank": 30,
+    "top_positive": [
+      {
+        "feature": "reb_per_game_zscore",
+        "value": 0.020591817796230316
+      },
+      {
+        "feature": "dreb_per_game_zscore",
+        "value": 0.008587418124079704
+      },
+      {
+        "feature": "oreb_per_game_zscore",
+        "value": 0.00646637799218297
+      },
+      {
+        "feature": "stl_pct_zscore",
+        "value": 0.004733042325824499
+      },
+      {
+        "feature": "strength_of_schedule_zscore",
+        "value": 0.0037423570174723864
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "vorp_zscore",
+        "value": -0.4956515431404114
+      },
+      {
+        "feature": "wins_zscore",
+        "value": -0.44089609384536743
+      },
+      {
+        "feature": "per_zscore",
+        "value": -0.26536476612091064
+      }
+    ]
+  }
+]

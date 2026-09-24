@@ -1,0 +1,30 @@
+{
+    "timestamp": "20260325_151100",
+    "dataset": {
+        "total_rows": 870,
+        "seasons_count": 29,
+        "features_count": 64
+    },
+    "training_window": {
+        "season_start": 1997,
+        "season_end": 2025
+    },
+    "metrics": {
+        "avg_ndcg_5": 0.893591720291352,
+        "avg_top1_accuracy": 0.7586206896551724,
+        "avg_mvp_pred_rank": 1.5862068965517242
+    },
+    "hyperparameters": {
+        "objective": "rank:pairwise",
+        "ndcg_exp_gain": false,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "n_estimators": 300,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 4,
+        "reg_lambda": 1.0,
+        "tree_method": "hist",
+        "random_state": 42
+    }
+}
