@@ -2,7 +2,13 @@
 
 This repository is a standalone technical snapshot of an NBA Most Valuable Player ranking module. It focuses on the modeling work—feature engineering, Learning-to-Rank, historical validation, and SHAP explainability—without the surrounding application or data-ingestion system.
 
-The trained model and historical evaluation artifacts are included. The source datasets are not. Training and inference require local CSVs conforming to the documented schema below; this repository does not generate, download, or update them.
+The trained model and historical evaluation artifacts are included. The source datasets are not. Training and inference require local CSVs conforming to the documented schema below. This repository does not generate, download, or update them.
+
+## Pipeline documentation
+
+See [PIPELINE.md](PIPELINE.md) for the end-to-end data flow, feature engineering, training, Leave-One-Season-Out validation, inference, artifact layout, and temporal leakage safeguards.
+
+For the public-facing methodology and interpretation of the award projections, see [Modelos predictivos de los premios individuales de la NBA](https://copero.com.ar/blog/prediccion-premios-nba-2026) (April 2, 2026).
 
 ## Technical approach
 
@@ -14,7 +20,7 @@ The trained model and historical evaluation artifacts are included. The source d
 
 ## Historical results
 
-These values are preserved from the included validation artifacts; they are not recalculated by this snapshot.
+These values are preserved from the included validation artifacts. They are not recalculated by this snapshot.
 
 | Metric | Result |
 | --- | ---: |
@@ -41,7 +47,7 @@ Each corresponding source change also has a nearby `Standalone adaptation` comme
 
 ## Local dataset contract
 
-Place the following files in `src/analytics/services/nba/mvp_predictor/data/`. The directory and files are intentionally absent from this repository. Importing the module does not require them; training or inference fails explicitly with the path of the first missing CSV.
+The following files should be placed in `src/analytics/services/nba/mvp_predictor/data/`. The directory and files are intentionally absent from this repository. Importing the module does not require them. Training or inference fails explicitly with the path of the first missing CSV.
 
 All three files use one row per entity and season. `season` must use `YYYY-YY` format, such as `2024-25`. Identifiers must be stable across files.
 
